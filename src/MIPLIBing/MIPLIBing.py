@@ -119,43 +119,43 @@ class MIPLIBing:
         if library in [Libraries.MIPLIB2017_Benchmark, Libraries.MIPLIB2017_Collection]:
 
             # Location of remote instances and local cache
-            self.remote_directory = "http://miplib.zib.de/WebData/instances/"
+            self.remote_directory = "https://miplib.zib.de/WebData/instances/"
             self.remote_file_ext = ".mps.gz"
             self.local_file_prefix = ""
             self.local_file_ext = ".mps"
 
             if library == Libraries.MIPLIB2017_Benchmark:
                 # Remote location of benchmark set and local CSV file name
-                self.instances_url = "http://miplib.zib.de/tag_benchmark.html"
+                self.instances_url = "https://miplib.zib.de/tag_benchmark.html"
                 self.instances_csv_file = "MIPLIB2017_Benchmark.csv"
             else:
                 # Remote location of collection set and local CSV file name
-                self.instances_url = "http://miplib.zib.de/tag_collection.html"
+                self.instances_url = "https://miplib.zib.de/tag_collection.html"
                 self.instances_csv_file = "MIPLIB2017_Collection.csv"
 
         elif library == Libraries.MINLPLIB:
 
             # Location of remote instances and local cache
-            self.remote_directory = "http://www.minlplib.org/"+file_extension+"/"
+            self.remote_directory = "https://www.minlplib.org/"+file_extension+"/"
             self.remote_file_ext = "."+file_extension
             self.local_file_prefix = ""
             self.local_file_ext = "."+file_extension
 
             # Remote location of MINLPLIB set and local CSV file
-            self.instances_url = "http://www.minlplib.org/instances.html"
+            self.instances_url = "https://www.minlplib.org/instances.html"
             self.instances_csv_file = "MINLPLIB.csv"
 
         elif library == Libraries.QPLIB:
 
             # Location of remote instances and local cache
-            self.remote_directory = "http://qplib.zib.de/"+file_extension+"/QPLIB_"
+            self.remote_directory = "https://qplib.zib.de/"+file_extension+"/QPLIB_"
             self.remote_file_ext = "."+file_extension
             self.local_file_prefix = "QPLIB_"
             self.local_file_ext = "."+file_extension
 
             # Remote location of QPLIB set and local CSV file
-            self.instances_url = "http://qplib.zib.de/instances.html"
-            self.solution_values_url = "http://qplib.zib.de/qplib.solu"
+            self.instances_url = "https://qplib.zib.de/instances.html"
+            self.solution_values_url = "https://qplib.zib.de/qplib.solu"
             self.instances_csv_file = "QPLIB.csv"
 
 
